@@ -1,0 +1,134 @@
+/* General Body Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc; /* Night sky */
+    font-family: 'Verdana', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  
+  @keyframes snowfall {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100vh);
+    }
+  }
+  
+  .timer-container {
+    position: relative; 
+    text-align: center;
+    z-index: 10; 
+    padding: 20px;
+    background: #00345b; 
+    width: 100%;
+  }
+  
+  .iframe-container {
+    position: absolute; 
+    top: 150px; 
+    z-index: 5; 
+    width: 100%;
+  }
+  
+  .iframe {
+    width: 100%;
+    height: 314px;
+    border: none; 
+    overflow: hidden; 
+    scrollbar-width: none; 
+  }
+  
+  .iframe::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  /* Banner */
+  .banner {
+    font-size: 2rem;
+    color: #4287f5;
+    text-shadow: 0 0 10px #4287f5;
+    margin-bottom: 10px;
+  }
+  
+  /* Countdown Timer */
+  .timer {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .timer span {
+    margin: 0 5px;
+  }
+  
+  .digit {
+    color: #4287f5;
+    text-shadow: 0 0 15px #4287f5, 0 0 20px #4287f5;
+    animation: flash 1s infinite alternate;
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+  .separator {
+    color: #fff;
+  }
+  
+
+  .merry-christmas {
+    position: absolute;
+    top: 7px; /* Adjust to fit your layout */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #ff4242;
+    text-shadow: 0 0 10px #ff4242, 0 0 20px #ff6f6f;
+    animation: glow 2s infinite alternate, slide-in 2s ease-out;
+    z-index: 20;
+    font-weight: bold;
+  }
+  
+  @keyframes glow {
+    0% {
+      opacity: 0.8;
+      text-shadow: 0 0 10px #ff4242, 0 0 20px #ff6f6f;
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 20px #ff4242, 0 0 30px #ff6f6f;
+    }
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-50%) translateY(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  }
+  
