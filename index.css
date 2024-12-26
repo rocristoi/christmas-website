@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+body {
+    font-family: "Poppins", serif;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.under-heading {
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+h1 {
+    font-size: 3rem;
+    background: linear-gradient(to left, #004b87, #fcd116, #ce1126); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    background-color: #333; 
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Mountain_Range_Banner.jpg/2560px-Mountain_Range_Banner.jpg') no-repeat center/cover;
+    filter: blur(3px);
+    z-index: -1; 
+    opacity: 0.7;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.footer-icons {
+    display: flex;
+    gap: 18px; 
+    align-items: center;
+}
+
+
+.footer-icons img:hover {
+    opacity: 0.8; 
+    transition: 0.3s;
+}
+
+.footer-text {
+    text-align: right; 
+}
+
+.flag {
+    width: 50px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.github-icon {
+    width: 70px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.visit-romania-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.visit-romania-button {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.visit-romania-button button {
+    background-color: #004b87; 
+    color: #fff; 
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer; 
+    font-family: "Poppins", serif;
+    margin-bottom: 40px;
+  }
+  
+  .visit-romania-button button:hover {
+    background-color: #003366;
+  }
